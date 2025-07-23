@@ -24,7 +24,7 @@ def sample_imgs(num, img_list):
 
 
 def get_image_list_from_dataset(num_imgs, yaml_dir):
-    print(yaml_dir)
+    print(f"Dataset detected with {yaml_dir} file")
     img_raw_paths = []
 
     with open(yaml_dir, "r") as yaml_file:
@@ -37,7 +37,7 @@ def get_image_list_from_dataset(num_imgs, yaml_dir):
             ):
                 img_raw_paths.append(line.split(":", 1)[1].strip())
 
-    no_yaml_dir = str(yaml_dir).replace(
+    no_yaml_dir = yaml_dir.replace(
         "data.yaml", "dummy_dir"
     )  # data.yaml sets dirs one level up
     img_set_paths = []
