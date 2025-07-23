@@ -173,7 +173,7 @@ if __name__ == "__main__":
         "--verbose",
         type=bool,
         default=False,
-        help="Where the list of images used for quantization should be outputted (default: ./imgs.txt)",
+        help="Whether to enable verbose logging",
     )
 
     args = parser.parse_args()
