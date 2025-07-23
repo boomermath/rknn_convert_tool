@@ -35,7 +35,7 @@ def get_filename_from_url(url):
     parsed = urlparse(url)
     filename = os.path.basename(parsed.path)
     if not filename:
-        filename = "downloaded_file"
+        filename = "" # never gonna get here
     return filename
 
 if __name__ == "__main__":
