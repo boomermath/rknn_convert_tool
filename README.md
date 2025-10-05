@@ -1,4 +1,4 @@
-# Note: Merged into [Photonvision](https://github.com/PhotonVision/photonvision)
+# Note: Merged into [Photonvision](https://github.com/PhotonVision/photonvision) - use that instead
 
 ## About
 
